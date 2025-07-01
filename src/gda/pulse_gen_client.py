@@ -33,6 +33,10 @@ class PulseGenClient(TCPSocket):
         com = "set_delay %s" %value
         self.sendCom(com)
         return self.readBuffer()
+    def command(self, value):
+        com = "pass_command %s" %value
+        self.sendCom(com)
+        return self.readBuffer()
      
          
 HOST = "172.23.110.81" # The server's hostname or IP address for Hutch Windows computer
