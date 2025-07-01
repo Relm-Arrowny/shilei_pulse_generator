@@ -20,7 +20,7 @@ from beamline.TCL_Controls.TCPSocket.TCPSocket import TCPSocket
 
 class PulseGenClient(TCPSocket):
     def __init__(self, bufferSize = 1048, timeout = 5):
-        super().__init__(bufferSize, timeout)
+        super(PulseGenClient,self).__init__(bufferSize, timeout)
         
 
 #================== get data ==============================================================
