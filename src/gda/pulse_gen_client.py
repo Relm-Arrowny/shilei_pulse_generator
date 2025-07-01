@@ -1,16 +1,15 @@
 '''
-Created on 27 Mar 2023
+Created on 01 july 2025
 
 @author: wvx67826
 
 @description: 
-    zurich client
+    pulse generator client
     JPython class to handle all client side of HF2Sever
     It send request to the server and handle responds 
     The server and client test with python 3 can be found here@
-        https://github.com/Relm-Arrowny/zhinstHF2/tree/main/src
-    manual:
-        https://docs.zhinst.com/pdf/ziMFIA_UserManual.pdf
+        https://github.com/Relm-Arrowny/shilei_pulse_generator
+
 @version: 1.0
     First implementation of all user requested functions.
     
@@ -36,8 +35,8 @@ class PulseGenClient(TCPSocket):
         return self.readBuffer()
      
          
-HOST = "172.23.110.69" # The server's hostname or IP address for Hutch Windows computer
-PORT = 7891  # The port used by the server
+HOST = "172.23.110.81" # The server's hostname or IP address for Hutch Windows computer
+PORT = 16888  # The port used by the server
 
 pulse_gen_client = PulseGenClient(bufferSize = 2048, timeout = 15)
 print(pulse_gen_client.connection(HOST, PORT))

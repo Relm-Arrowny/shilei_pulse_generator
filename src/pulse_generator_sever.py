@@ -1,3 +1,10 @@
+'''
+Created on 01 july 2025
+
+@author: wvx67826
+'''
+
+
 import socket
 import numpy as np
 from time import time, sleep

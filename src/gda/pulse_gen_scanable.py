@@ -1,16 +1,13 @@
 '''
-Created on 25 Apr 2023
+Created on 01 july 2025
 
 @author: wvx67826
 @description:
-    gda scanable that take zurich client object and perform different 
-    get/set function on the zurich lockin
-    zurich client class:
-        /dls_sw/i10/scripts/beamline/TCL_Controls/zurichHF2/ZHF2Client.py
-    manual:
-        https://docs.zhinst.com/pdf/ziMFIA_UserManual.pdf
+    gda scanable that take pulse generator client object and perform different 
+    get/set function
+    pulse generator client class:
+        /dls_sw/i10/scripts/beamline/TCL_Controls/pulse generator/pulse_gen_client.py
 @version: 1.0
-     scanable require zhf2client object it return x y,R and theta from the lockin
 '''
 from gda.device.scannable import ScannableBase
 
